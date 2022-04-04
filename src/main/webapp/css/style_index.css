@@ -38,22 +38,22 @@
 		opacity: 1;
 	}
 	34% {
-		opacity: 1;
+		opacity: 0;
 	}
 	45% {
-		opacity: 1;
+		opacity: 0;
 	}
 	56% {
-		opacity: 1;
+		opacity: 0;
 	}
 	67% {
-		opacity: 1;
+		opacity: 0;
 	}
 	78% {
-		opacity: 1;
+		opacity: 0;
 	}
 	89% {
-		opacity: 1;
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
@@ -61,13 +61,13 @@
 }
 @keyframes slide_img_2 { 
 	0% {
-		opacity: 1;
+		opacity: 0;
 	}
 	12% {
-		opacity: 1;
+		opacity: 0;
 	}
 	23% {
-		opacity: 1;
+		opacity: 0;
 	}
 	34% {
 		opacity: 1;
@@ -79,36 +79,36 @@
 		opacity: 1;
 	}
 	67% {
-		opacity: 1;
+		opacity: 0;
 	}
 	78% {
-		opacity: 1;
+		opacity: 0;
 	}
 	89% {
-		opacity: 1;
+		opacity: 0;
 	}
 	100% {
-		opacity: 1;
+		opacity: 0;
 	}
 }
 @keyframes slide_img_3 { 
 	0% {
-		opacity: 1;
+		opacity: 0;
 	}
 	12% {
-		opacity: 1;
+		opacity: 0;
 	}
 	23% {
-		opacity: 1;
+		opacity: 0;
 	}
 	34% {
-		opacity: 1;
+		opacity: 0;
 	}
 	45% {
-		opacity: 1;
+		opacity: 0;
 	}
 	56% {
-		opacity: 1;
+		opacity: 0;
 	}
 	67% {
 		opacity: 1;
@@ -120,7 +120,7 @@
 		opacity: 1;
 	}
 	100% {
-		opacity: 1;
+		opacity: 0;
 	}
 }
 

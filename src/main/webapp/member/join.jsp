@@ -1,26 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+<!-- meta 선언 -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, inital-scale=1.0">
-
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/style_index.css">
-
-<script src="https://kit.fontawesome.com/f2552ea92d.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- link 선언 -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style_join.css">
+<!-- script 선언 -->
+<script src="https://kit.fontawesome.com/e1bd1cb2a5.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="./js/script.js"></script>
-
+<script src="../js/script.js"></script>
 <title>Jo's</title>
 </head>
-
 <body>
 	<header>
 		<div class="header_container">
 			<div class="logo_container">
-				<a href="./index.jsp">BLOG</a>
+				<a href="../index.jsp">BLOG</a>
 			</div>
 			<div class="nav_container" id="nav_menu">
 				<div class="menu_container">
@@ -49,52 +48,41 @@
 					<ul class="login">
 						<li class="menu_login"><a class="menu_title"
 							href="./login.jsp">로그인</a></li>
-						<li class="menu_join"><a class="menu_title" href="./member/join.jsp">회원가입</a></li>
+						<li class="menu_join"><a class="menu_title" href="./join.jsp">회원가입</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="main_container">
-		<div class="conA">
-			<div class="slide img1"></div>
-			<div class="slide img2"></div>
-			<div class="slide img3"></div>
-		</div>
-		<div class="conB">
-			<div class="conB_title">
-				<h3>About</h3>
+	<div class="join_container">
+		<h2>회원 가입</h2>
+		<form method="post" action="./join_Action.jsp">
+			<h3>아이디</h3>
+			<div class="joinID">
+				<input type="text" class="input" style="ime-mode: disabled;"
+					placeholder="아이디" name="userID" title="아이디" maxlength="20">
 			</div>
-			<div class="conB_container">
-				<div class="conB_small_container">
-					<div class="conB_icon">
-						<i class="fas fa-code icon"></i>
-					</div>
-					<div class="conB_content">
-						<h3>Title 1</h3>
-						<p>Index 1</p>
-					</div>
-				</div>
-				<div class="conB_small_container">
-					<div class="conB_icon">
-						<i class="fas fa-cogs icon"></i>
-					</div>
-					<div class="conB_content">
-						<h3>Title 2</h3>
-						<p>Index 2</p>
-					</div>
-				</div>
-				<div class="conB_small_container">
-					<div class="conB_icon">
-						<i class="fas fa-plane icon"></i>
-					</div>
-					<div class="conB_content">
-						<h3>Title 3</h3>
-						<p>Index 3</p>
-					</div>
-				</div>
+			<h3>비밀번호</h3>
+			<div class="joinPassword">
+				<input type="password" class="input" placeholder="비밀번호"
+					name="userPassword" title="비밀번호" maxlength="20">
 			</div>
-		</div>
+			<h3>이름</h3>
+			<div class="joinName">
+				<input type="text" class="input" placeholder="이름" name="userName"
+					title="이름" maxlength="20">
+			</div>
+			<h3>생년월일</h3>
+			<div class="joinDate">
+				<input type="date" class="input" placeholder="생년월일" name="userDate">
+			</div>
+			<h3>성별</h3>
+			<div class="joinGender">
+				<input type="radio" name="userGender" value="M" title="성별">남
+				<input type="radio" name="userGender" value="F" title="성별">여
+			</div>
+			<input type="submit" class="bt_join" value="회원가입">
+		</form>
 	</div>
 	<footer>
 		<div class="footer_container">
@@ -104,3 +92,4 @@
 	</footer>
 </body>
 </html>
+
